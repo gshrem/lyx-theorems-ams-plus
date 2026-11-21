@@ -1,0 +1,271 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (Hebrew labels) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Hebrew editor labels for the theorem environments in Hebrew documents: every
+#label in Hebrew, with the number and colon in the right direction. Affects the
+#editor only; the PDF headings follow the language of the environment text.
+#DescriptionEnd
+#Requires: theorem-ams-plus
+#Excludes: theorem-hebrewlabels-icons-plus
+
+Format 111
+
+# LabelString values use balanced Unicode RLE (U+202B) / PDF (U+202C).
+# These editor direction controls do not enter LaTeX output.
+
+ModifyStyle Definition
+  LabelString           "‫הגדרה \thetheorem:‬"
+End
+
+ModifyStyle Definition*
+  LabelString           "‫הגדרה:‬"
+End
+
+ModifyStyle Corollary
+  LabelString           "‫מסקנה \thetheorem:‬"
+End
+
+ModifyStyle Corollary*
+  LabelString           "‫מסקנה:‬"
+End
+
+ModifyStyle Proposition
+  LabelString           "‫הצעה \thetheorem:‬"
+End
+
+ModifyStyle Proposition*
+  LabelString           "‫הצעה:‬"
+End
+
+ModifyStyle Lemma
+  LabelString           "‫למה \thetheorem:‬"
+End
+
+ModifyStyle Lemma*
+  LabelString           "‫למה:‬"
+End
+
+ModifyStyle Theorem
+  LabelString           "‫משפט \thetheorem:‬"
+End
+
+ModifyStyle Theorem*
+  LabelString           "‫משפט:‬"
+End
+
+ModifyStyle Conjecture
+  LabelString           "‫השערה \thetheorem:‬"
+End
+
+ModifyStyle Conjecture*
+  LabelString           "‫השערה:‬"
+End
+
+ModifyStyle Notation
+  LabelString           "‫סימון \thetheorem:‬"
+End
+
+ModifyStyle Notation*
+  LabelString           "‫סימון:‬"
+End
+
+ModifyStyle Notes
+  LabelString           "‫הערות \thetheorem:‬"
+End
+
+ModifyStyle Notes*
+  LabelString           "‫הערות:‬"
+End
+
+ModifyStyle Remark
+  LabelString           "‫הערה \thetheorem:‬"
+End
+
+ModifyStyle Remark*
+  LabelString           "‫הערה:‬"
+End
+
+ModifyStyle Claim
+  LabelString           "‫טענה \thetheorem:‬"
+End
+
+ModifyStyle Claim*
+  LabelString           "‫טענה:‬"
+End
+
+ModifyStyle AuxiliaryClaim
+  LabelString           "‫טענת עזר \theauxclaim:‬"
+End
+
+ModifyStyle AuxiliaryClaim*
+  LabelString           "‫טענת עזר:‬"
+End
+
+ModifyStyle Example
+  LabelString           "‫דוגמה \thetheorem:‬"
+End
+
+ModifyStyle Example*
+  LabelString           "‫דוגמה:‬"
+End
+
+ModifyStyle Examples*
+  LabelString           "‫דוגמאות:‬"
+End
+
+ModifyStyle CountersExample
+  LabelString           "‫דוגמה נגדית \thetheorem:‬"
+End
+
+ModifyStyle CountersExample*
+  LabelString           "‫דוגמה נגדית:‬"
+End
+
+ModifyStyle Problem
+  LabelString           "‫בעיה \thetheorem:‬"
+End
+
+ModifyStyle Problem*
+  LabelString           "‫בעיה:‬"
+End
+
+ModifyStyle Solution
+  LabelString           "‫פתרון \thetheorem:‬"
+End
+
+ModifyStyle Solution*
+  LabelString           "‫פתרון:‬"
+End
+
+ModifyStyle Exercise
+  LabelString           "‫תרגיל \thetheorem:‬"
+End
+
+ModifyStyle Exercise*
+  LabelString           "‫תרגיל:‬"
+End
+
+ModifyStyle Question
+  LabelString           "‫שאלה \thetheorem:‬"
+End
+
+ModifyStyle Question*
+  LabelString           "‫שאלה:‬"
+End
+
+ModifyStyle Observation
+  LabelString           "‫הבחנה \thetheorem:‬"
+End
+
+ModifyStyle Observation*
+  LabelString           "‫הבחנה:‬"
+End
+
+ModifyStyle Fact
+  LabelString           "‫עובדה \thetheorem:‬"
+End
+
+ModifyStyle Fact*
+  LabelString           "‫עובדה:‬"
+End
+
+ModifyStyle Summary
+  LabelString           "‫סיכום \thetheorem:‬"
+End
+
+ModifyStyle Summary*
+  LabelString           "‫סיכום:‬"
+End
+
+ModifyStyle Conclusion
+  LabelString           "‫סיכום \thetheorem:‬"
+End
+
+ModifyStyle Conclusion*
+  LabelString           "‫סיכום:‬"
+End
+
+ModifyStyle Acknowledgement
+  LabelString           "‫הכרת תודה \thetheorem:‬"
+End
+
+ModifyStyle Acknowledgement*
+  LabelString           "‫הכרת תודה:‬"
+End
+
+ModifyStyle Assumption
+  LabelString           "‫הנחה \thetheorem:‬"
+End
+
+ModifyStyle Assumption*
+  LabelString           "‫הנחה:‬"
+End
+
+ModifyStyle Criterion
+  LabelString           "‫קריטריון \thetheorem:‬"
+End
+
+ModifyStyle Criterion*
+  LabelString           "‫קריטריון:‬"
+End
+
+ModifyStyle Algorithm
+  LabelString           "‫אלגוריתם \thetheorem:‬"
+End
+
+ModifyStyle Algorithm*
+  LabelString           "‫אלגוריתם:‬"
+End
+
+ModifyStyle Axiom
+  LabelString           "‫אקסיומה \thetheorem:‬"
+End
+
+ModifyStyle Axiom*
+  LabelString           "‫אקסיומה:‬"
+End
+
+ModifyStyle Answer
+  LabelString           "‫תשובה \thetheorem:‬"
+End
+
+ModifyStyle Answer*
+  LabelString           "‫תשובה:‬"
+End
+
+ModifyStyle Condition
+  LabelString           "‫תנאי \thetheorem:‬"
+End
+
+ModifyStyle Condition*
+  LabelString           "‫תנאי:‬"
+End
+
+ModifyStyle Proof
+  LabelString           "‫הוכחה.‬"
+End
+
+Counter casei
+    LabelString "‫מקרה \arabic{casei}.‬"
+End
+
+Counter caseii
+    Within casei
+    RefFormat case "Case|Cases \Alph{caseii}"
+    LabelString "‫מקרה \Alph{caseii}.‬"
+End
+
+Counter caseiii
+    Within caseii
+    LabelString "‫מקרה \alph{caseiii}.‬"
+End
+
+Counter caseiv
+    Within caseiii
+    LabelString "‫מקרה \roman{caseiv}.‬"
+End
+

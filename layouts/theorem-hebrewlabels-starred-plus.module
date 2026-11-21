@@ -1,0 +1,74 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (Hebrew labels, Unnumbered) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#The Hebrew editor labels for the 'Theorems (Unnumbered) Plus' route. Affects
+#the editor only; the PDF headings follow the language of the environment text.
+#DescriptionEnd
+#Requires: theorem-starred-plus
+
+Format 111
+
+# The shared Hebrew labels; overrides for absent styles are ignored by LyX.
+Input theorem-hebrewlabels-plus.module
+
+# In this route the unstarred names are unnumbered aliases.
+
+ModifyStyle Theorem
+  LabelString           "‫משפט:‬"
+End
+
+ModifyStyle Corollary
+  LabelString           "‫מסקנה:‬"
+End
+
+ModifyStyle Lemma
+  LabelString           "‫למה:‬"
+End
+
+ModifyStyle Proposition
+  LabelString           "‫הצעה:‬"
+End
+
+ModifyStyle Conjecture
+  LabelString           "‫השערה:‬"
+End
+
+ModifyStyle Fact
+  LabelString           "‫עובדה:‬"
+End
+
+ModifyStyle Definition
+  LabelString           "‫הגדרה:‬"
+End
+
+ModifyStyle Example
+  LabelString           "‫דוגמה:‬"
+End
+
+ModifyStyle Problem
+  LabelString           "‫בעיה:‬"
+End
+
+ModifyStyle Exercise
+  LabelString           "‫תרגיל:‬"
+End
+
+ModifyStyle Solution
+  LabelString           "‫פתרון:‬"
+End
+
+ModifyStyle Remark
+  LabelString           "‫הערה:‬"
+End
+
+ModifyStyle Claim
+  LabelString           "‫טענה:‬"
+End
+
+ModifyStyle Observation
+  LabelString           "‫הבחנה:‬"
+End

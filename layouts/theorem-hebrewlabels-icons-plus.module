@@ -1,0 +1,47 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (Hebrew labels + icons) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#The Hebrew editor labels, including the icon environments. Use it instead of
+#'Theorems (Hebrew labels) Plus' when the icons module is loaded.
+#DescriptionEnd
+#Requires: theorem-icons-plus
+#Excludes: theorem-hebrewlabels-plus
+
+Format 111
+
+# LabelString values use balanced Unicode RLE (U+202B) / PDF (U+202C).
+# These editor direction controls do not enter LaTeX output.
+
+Input theorem-hebrewlabels-plus.module
+
+ModifyStyle Exercise
+  LabelString           "‫✎ תרגיל \thetheorem:‬"
+End
+
+ModifyStyle Exercise*
+  LabelString           "‫✎ תרגיל:‬"
+End
+
+ModifyStyle Question
+  LabelString           "‫❓ שאלה \thetheorem:‬"
+End
+
+ModifyStyle Question*
+  LabelString           "‫❓ שאלה:‬"
+End
+
+ModifyStyle Observation
+  LabelString           "‫🧠 הבחנה \thetheorem:‬"
+End
+
+ModifyStyle Observation*
+  LabelString           "‫🧠 הבחנה:‬"
+End
+
+ModifyStyle Reminder
+  LabelString           "‫🔔 תזכורת‬"
+End

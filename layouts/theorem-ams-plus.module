@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (AMS) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Defines theorem environments and the proof environment using the extended
+#AMS machinery. Both numbered and unnumbered types are provided. By default,
+#the theorems are numbered consecutively throughout the document. This can be
+#changed by loading the 'Theorems (Numbered by Section) Plus' module.
+#DescriptionEnd
+#Excludes: theorems-std | theorems-ams | theorems-starred | theorems-bytype | theorems-ams-bytype | theorems-ams-chap-bytype | theorems-ams-extended-chap-bytype | theorems-ams-new | theorems-ams-extended-new | theorems-sec-new | theorems-starred-new | theorem-starred-plus
+
+
+# Original Author : David L. Johnson <dlj0@lehigh.edu>
+# Probably broken by Jean-Marc Lasgouttes <Jean-Marc.Lasgouttes@inria.fr>
+# modified and modularized by Emmanuel GUREGHIAN <gureghia@boston.bertin.fr>
+# Tinkered with Sep. '07 by Paul Rubin <rubin@msu.edu>
+# Modularized Jan 08 by Richard Heck <rgheck@comcast.net>
+
+Format 111
+
+Input theorem-ams-plus.inc

@@ -1,0 +1,103 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (Unnumbered) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Defines only unnumbered theorem environments, and the proof environment, using
+#the extended AMS machinery.
+#DescriptionEnd
+#Excludes: theorems-std | theorems-ams | theorems-starred | theorems-bytype | theorems-ams-bytype | theorems-ams-chap-bytype | theorems-ams-extended-chap-bytype | theorems-ams-new | theorems-ams-extended-new | theorems-sec-new | theorems-starred-new | theorem-ams-plus
+
+# Author: Richard Heck <rgheck@comcast.net>
+
+Format 111
+
+Input theorem-ams-plus.inc
+
+# Preserve existing unstarred layout identifiers as unnumbered aliases.
+
+Style Theorem
+	CopyStyle Theorem*
+	DependsOn Theorem*
+	RefPrefix OFF
+End
+
+Style Corollary
+	CopyStyle Corollary*
+	DependsOn Corollary*
+	RefPrefix OFF
+End
+
+Style Lemma
+	CopyStyle Lemma*
+	DependsOn Lemma*
+	RefPrefix OFF
+End
+
+Style Proposition
+	CopyStyle Proposition*
+	DependsOn Proposition*
+	RefPrefix OFF
+End
+
+Style Conjecture
+	CopyStyle Conjecture*
+	DependsOn Conjecture*
+	RefPrefix OFF
+End
+
+Style Fact
+	CopyStyle Fact*
+	DependsOn Fact*
+	RefPrefix OFF
+End
+
+Style Definition
+	CopyStyle Definition*
+	DependsOn Definition*
+	RefPrefix OFF
+End
+
+Style Example
+	CopyStyle Example*
+	DependsOn Example*
+	RefPrefix OFF
+End
+
+Style Problem
+	CopyStyle Problem*
+	DependsOn Problem*
+	RefPrefix OFF
+End
+
+Style Exercise
+	CopyStyle Exercise*
+	DependsOn Exercise*
+	RefPrefix OFF
+End
+
+Style Solution
+	CopyStyle Solution*
+	DependsOn Solution*
+	RefPrefix OFF
+End
+
+Style Remark
+	CopyStyle Remark*
+	DependsOn Remark*
+	RefPrefix OFF
+End
+
+Style Claim
+	CopyStyle Claim*
+	DependsOn Claim*
+	RefPrefix OFF
+End
+
+Style Observation
+	CopyStyle Observation*
+	DependsOn Observation*
+	RefPrefix OFF
+End

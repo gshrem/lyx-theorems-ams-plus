@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (Numbered by Section) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Numbers theorems and the like by section (i.e., the counter is reset at
+#each section start).
+#DescriptionEnd
+#Requires: theorem-ams-plus
+#Excludes: theorems-chap | theorems-sec | theorem-starred-plus
+
+# Author: Richard Heck <rgheck@comcast.net>
+
+Format 111
+
+Counter theorem
+	GuiName Theorem
+	LaTeXName thm
+	Within section
+	RefFormat thm "Theorem|Theorems \thesection.\arabic{theorem}"
+	RefFormat cor "Corollary|Corollaries \thesection.\arabic{theorem}"
+	RefFormat lem "Lemma|Lemmas \thesection.\arabic{theorem}"
+	RefFormat prop "Proposition|Propositions \thesection.\arabic{theorem}"
+	RefFormat conj "Conjecture|Conjectures \thesection.\arabic{theorem}"
+	RefFormat fact "Fact|Facts \thesection.\arabic{theorem}"
+	RefFormat def "Definition|Definitions \thesection.\arabic{theorem}"
+	RefFormat exa "Example|Examples \thesection.\arabic{theorem}"
+	RefFormat prob "Problem|Problems \thesection.\arabic{theorem}"
+	RefFormat exer "Exercise|Exercises \thesection.\arabic{theorem}"
+	RefFormat solu "Solution|Solutions \thesection.\arabic{theorem}"
+	RefFormat rem "Remark|Remarks \thesection.\arabic{theorem}"
+	RefFormat claim "Claim|Claims \thesection.\arabic{theorem}"
+	RefFormat cri "Criterion|Criteria \thesection.\arabic{theorem}"
+	RefFormat alg "Algorithm|Algorithms \thesection.\arabic{theorem}"
+	RefFormat axm "Axiom|Axioms \thesection.\arabic{theorem}"
+	RefFormat cond "Condition|Conditions \thesection.\arabic{theorem}"
+	RefFormat notes "Notes|Notes \thesection.\arabic{theorem}"
+	RefFormat nota "Notation|Notations \thesection.\arabic{theorem}"
+	RefFormat sum "Summary|Summaries \thesection.\arabic{theorem}"
+	RefFormat ack "Acknowledgement|Acknowledgements \thesection.\arabic{theorem}"
+	RefFormat conc "Conclusion|Conclusions[[theorem]] \thesection.\arabic{theorem}"
+	RefFormat assu "Assumption|Assumptions \thesection.\arabic{theorem}"
+	RefFormat que "Question|Questions \thesection.\arabic{theorem}"
+	RefFormat obs "Observation|Observations \thesection.\arabic{theorem}"
+	RefFormat cex "Counterexample|Counterexamples \thesection.\arabic{theorem}"
+	RefFormat ans "Answer|Answers \thesection.\arabic{theorem}"
+End
+
+ModifyStyle Theorem
+	TheoremParentCounter section
+End

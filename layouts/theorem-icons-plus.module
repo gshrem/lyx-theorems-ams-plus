@@ -1,0 +1,165 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (icons) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Symbol-prefixed theorem heads for Exercise, Question, and Observation
+#(numbered + unnumbered), and a Reminder environment. Requires the
+#AMS-Extended Plus module.
+#DescriptionEnd
+#Requires: theorem-ams-extended-plus
+
+Format 111
+
+Requires amsmath, bbding, twemojis
+
+# Keep icon helpers with the layouts, even with a personal Local Layout Preamble.
+Style ThmPlusIconsSetup
+  ObsoletedBy Standard
+  DependsOn Theorem
+  Preamble
+	\usepackage{bbding}
+	\usepackage{twemojis}
+	\newcommand{\thmplusPencil}{\raisebox{-1.5bp}{{\mdseries\PencilLeftDown}}}
+	\newcommand{\thmplusQuestion}{\raisebox{-1bp}{\texttwemoji{question}}}
+	\newcommand{\thmplusObservation}{\raisebox{-1.5bp}{\texttwemoji{brain}}}
+EndPreamble
+End
+
+ModifyStyle Exercise
+  DependsOn ThmPlusIconsSetup
+  LabelString           "✎ Exercise \thetheorem."
+	TheoremName                 xca
+	TheoremLaTeXName            thmplusExerciseHeading
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Exercise
+	TheoremCrossRefPluralName   Exercises
+	TheoremZRefName             exercise
+	Preamble
+	  \providecommand{\thmplusExerciseHeading}{\thmplusPencil\ \bfseries\protect\exercisename}
+	EndPreamble
+  LangPreamble
+    \providecommand{\exercisename}{_(Exercise)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\exercisename}{_(Exercise)}}
+  EndBabelPreamble
+End
+
+ModifyStyle Exercise*
+  DependsOn ThmPlusIconsSetup
+  LabelString           "✎ Exercise."
+	TheoremName                 xca*
+	TheoremLaTeXName            thmplusExerciseStarHeading
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Exercise
+	TheoremCrossRefPluralName   Exercises
+	TheoremZRefName             exercise
+	Preamble
+	  \providecommand{\thmplusExerciseStarHeading}{\thmplusPencil\ \bfseries\protect\exercisename}
+	EndPreamble
+  LangPreamble
+    \providecommand{\exercisename}{_(Exercise)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\exercisename}{_(Exercise)}}
+  EndBabelPreamble
+End
+
+
+ModifyStyle Question
+  DependsOn ThmPlusIconsSetup
+  LabelString           "❓ Question \thetheorem."
+	TheoremName                 question
+	TheoremLaTeXName            thmplusQuestionHeading
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Question
+	TheoremCrossRefPluralName   Questions
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusQuestionHeading}{{\LARGE\thmplusQuestion}\,\bfseries\protect\questionname}
+	EndPreamble
+  LangPreamble
+    \providecommand{\questionname}{_(Question)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\questionname}{_(Question)}}
+  EndBabelPreamble
+End
+
+ModifyStyle Question*
+  DependsOn ThmPlusIconsSetup
+  LabelString           "❓ Question."
+	TheoremName                 question*
+	TheoremLaTeXName            thmplusQuestionStarHeading
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Question
+	TheoremCrossRefPluralName   Questions
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusQuestionStarHeading}{{\LARGE\thmplusQuestion}\,\bfseries\protect\questionname}
+	EndPreamble
+  LangPreamble
+    \providecommand{\questionname}{_(Question)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\questionname}{_(Question)}}
+  EndBabelPreamble
+End
+
+
+ModifyStyle Observation
+  DependsOn ThmPlusIconsSetup
+  LabelString           "🧠 Observation \thetheorem."
+	TheoremName                 observation
+	TheoremLaTeXName            thmplusObservationHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Observation
+	TheoremCrossRefPluralName   Observations
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusObservationHeading}{{\LARGE\thmplusObservation}\ \color{thmplusBordeaux}\bfseries\protect\observationname}
+	EndPreamble
+  LangPreamble
+    \providecommand{\observationname}{_(Observation)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\observationname}{_(Observation)}}
+  EndBabelPreamble
+End
+
+ModifyStyle Observation*
+  DependsOn ThmPlusIconsSetup
+  LabelString           "🧠 Observation."
+	TheoremName                 observation*
+	TheoremLaTeXName            thmplusObservationStarHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Observation
+	TheoremCrossRefPluralName   Observations
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusObservationStarHeading}{{\LARGE\thmplusObservation} \color{thmplusBordeaux}\bfseries\protect\observationname}
+	EndPreamble
+  LangPreamble
+    \providecommand{\observationname}{_(Observation)}
+  EndLangPreamble
+  BabelPreamble
+    \addto\captions$$lang{\renewcommand{\observationname}{_(Observation)}}
+  EndBabelPreamble
+End
+
+Input theorem-reminder-plus.inc

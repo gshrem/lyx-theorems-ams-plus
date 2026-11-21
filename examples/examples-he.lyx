@@ -1,0 +1,1606 @@
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorem-ams-plus
+theorem-ams-extended-plus
+theorem-icons-plus
+theorem-sec-plus
+theorem-hebrewlabels-icons-plus
+\end_modules
+\maintain_unincluded_children no
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Courier New"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification default
+\crossref_package cleveref
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
+\index אינדקס
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Title
+דוגמה מלאה:
+ 
+\lang english
+Theorems (AMS) Plus
+\end_layout
+
+\begin_layout Author
+גלעד שרם |
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Gilad Shrem
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+גרסה 
+\numeric on
+2.0.0
+\numeric off
+ | 
+\numeric on
+60
+\numeric off
+ סביבות
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו מסמך 
+\lang english
+\SpecialChar LyX
+
+\lang hebrew
+ עריך לבדיקת מספור,
+ כותרות אופציונליות,
+ תוויות,
+ הפניות ומקרים מקוננים.
+ אין צורך בהתאמות מקומיות או ב-
+\lang english
+Preamble
+\lang hebrew
+ אישי.
+\end_layout
+
+\begin_layout Section
+בדיקת סביבות והפניות
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+פיתגורס
+\end_layout
+
+\end_inset
+
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:Theorem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Corollary
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:Corollary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Lemma
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:Lemma"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma*
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+ככה
+\end_layout
+
+\end_inset
+
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Proposition
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "prop:Proposition"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Conjecture
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "conj:Conjecture"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Conjecture*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Fact
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "fact:Fact"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Fact*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Definition
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+משולש ישר זווית
+\end_layout
+
+\end_inset
+
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "def:Definition"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Example
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:Example"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Problem
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "prob:Problem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Exercise
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:Exercise"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Solution
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "solu:Solution"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Solution*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Remark
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:Remark"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Claim
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "claim:Claim"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Proof
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Case
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "case:Case"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Criterion
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "cri:Criterion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Criterion*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Algorithm
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Algorithm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Algorithm*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Axiom
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "axm:Axiom"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Axiom*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Condition
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "cond:Condition"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Condition*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Notes
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "notes:Notes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Notes*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Notation
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "nota:Notation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Notation*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Summary
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "sum:Summary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Summary*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Acknowledgement
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "ack:Acknowledgement"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Acknowledgement*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Conclusion
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "conc:Conclusion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Conclusion*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Assumption
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "assu:Assumption"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Assumption*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Question
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "que:Question"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Question*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Observation
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "obs:Observation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Observation*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Examples*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout CountersExample
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "cex:CountersExample"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout CountersExample*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout AuxiliaryClaim
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "auxclaim:AuxiliaryClaim"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AuxiliaryClaim*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Answer
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\begin_inset CommandInset label
+LatexCommand label
+name "ans:Answer"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Answer*
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Reminder
+דוגמה לבדיקת הכותרת,
+ המספור וכיוון הכתיבה.
+\end_layout
+
+\begin_layout Section
+הפניות
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "thm:Theorem"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:Theorem"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "cor:Corollary"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:Corollary"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "lem:Lemma"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:Lemma"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "prop:Proposition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop:Proposition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "conj:Conjecture"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "conj:Conjecture"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fact:Fact"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fact:Fact"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "def:Definition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:Definition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "exa:Example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:Example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "prob:Problem"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prob:Problem"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "exer:Exercise"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:Exercise"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "solu:Solution"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "solu:Solution"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "rem:Remark"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:Remark"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "claim:Claim"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "claim:Claim"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "case:Case"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "case:Case"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "cri:Criterion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cri:Criterion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "alg:Algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "axm:Axiom"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "axm:Axiom"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "cond:Condition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cond:Condition"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "notes:Notes"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "notes:Notes"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "nota:Notation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "nota:Notation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sum:Summary"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sum:Summary"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "ack:Acknowledgement"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ack:Acknowledgement"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "conc:Conclusion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "conc:Conclusion"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "assu:Assumption"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "assu:Assumption"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "que:Question"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "que:Question"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "obs:Observation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "obs:Observation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "cex:CountersExample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cex:CountersExample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "auxclaim:AuxiliaryClaim"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "auxclaim:AuxiliaryClaim"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "ans:Answer"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ans:Answer"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout AuxiliaryClaim
+טענת עזר בסעיף חדש.
+\begin_inset CommandInset label
+LatexCommand label
+name "auxclaim:reset"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פסקת הפרדה בין שתי טענות.
+\end_layout
+
+\begin_layout AuxiliaryClaim
+טענת עזר נוספת.
+\begin_inset CommandInset label
+LatexCommand label
+name "auxclaim:second"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "auxclaim:reset"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+;
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "auxclaim:second"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+משפט בסעיף חדש.
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:secondsection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מקרים מקוננים
+\end_layout
+
+\begin_layout Case
+מקרה מקונן.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+מקרה מקונן.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+מקרה מקונן.
+\end_layout
+
+\begin_deeper
+\begin_layout Case
+מקרה מקונן.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Section
+קרדיטים
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Twemoji graphics:
+ Copyright 2019 Twitter,
+ Inc.
+ and contributors.
+ CC BY 4.0.
+ Original graphics,
+ scaled/positioned.
+ See CREDITS.md.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+url{https://creativecommons.org/licenses/by/4.0/}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Plus:
+ Gilad Shrem,
+ 2024-2026.
+ GPL-2.0-or-later.
+ LyX contributors are credited in CREDITS.md.
+\end_layout
+
+\end_body
+\end_document

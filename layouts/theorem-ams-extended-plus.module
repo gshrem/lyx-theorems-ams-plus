@@ -1,0 +1,834 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Theorems (AMS) Plus 2.0.0
+# Plus modifications: Gilad Shrem <shrem173@gmail.com>, 2024-2026. See CREDITS.md.
+
+#\DeclareLyXModule{Theorems (AMS-Extended) Plus}
+#\DeclareCategory{Maths}
+#DescriptionBegin
+#Additional theorem environments: Criterion, Algorithm, Axiom, Condition,
+#Notes, Notation, Summary, Acknowledgement, Conclusion, Assumption, Question,
+#Counterexample, Auxiliary Claim, Answer and unnumbered variants,
+#plus Examples*.
+#DescriptionEnd
+#Requires: theorem-ams-plus
+
+# Original Author : David L. Johnson <dlj0@lehigh.edu>
+# Probably broken by Jean-Marc Lasgouttes <Jean-Marc.Lasgouttes@inria.fr>
+# modified and modularized by Emmanuel GUREGHIAN <gureghia@boston.bertin.fr>
+# Tinkered with Sep. '07 by Paul Rubin <rubin@msu.edu>
+# Modularized Jan 08 by Richard Heck <rgheck@comcast.net>
+
+
+Format 111
+
+# Menu order within categories. Every entry is defined below or in the
+# included extras file; optional layouts are never declared by the base module.
+Style Notation
+End
+
+Style Notation*
+End
+
+Style Axiom
+End
+
+Style Axiom*
+End
+
+Style Assumption
+End
+
+Style Assumption*
+End
+
+Style Condition
+End
+
+Style Condition*
+End
+
+Style Criterion
+End
+
+Style Criterion*
+End
+
+Style AuxiliaryClaim
+End
+
+Style AuxiliaryClaim*
+End
+
+Style Examples*
+End
+
+Style CountersExample
+End
+
+Style CountersExample*
+End
+
+Style Question
+End
+
+Style Question*
+End
+
+Style Algorithm
+End
+
+Style Algorithm*
+End
+
+Style Answer
+End
+
+Style Answer*
+End
+
+Style Notes
+End
+
+Style Notes*
+End
+
+Style Summary
+End
+
+Style Summary*
+End
+
+Style Conclusion
+End
+
+Style Conclusion*
+End
+
+Style Acknowledgement
+End
+
+Style Acknowledgement*
+End
+
+Style Criterion
+	CopyStyle             Theorem
+  Category Definitions
+	DependsOn	            Theorem
+	LatexName             criterion
+	LabelString           "Criterion \thetheorem."
+	TheoremName                 criterion
+	TheoremLaTeXName            criterionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Criterion
+	TheoremCrossRefPluralName   Criteria
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\criterionname}{_(Criterion)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\criterionname}{_(Criterion)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{criterion}{_(criterion)}{_(criteria)}\Crefname{criterion}{_(Criterion)}{_(Criteria)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix cri
+End
+
+
+Style Criterion*
+	CopyStyle             Theorem*
+  Category Definitions
+	LatexName             criterion*
+	LabelString           "Criterion."
+	TheoremName                 criterion*
+	TheoremLaTeXName            criterionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Criterion
+	TheoremCrossRefPluralName   Criteria
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\criterionname}{_(Criterion)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\criterionname}{_(Criterion)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{criterion*}{_(criterion)}{_(criteria)}\Crefname{criterion*}{_(Criterion)}{_(Criteria)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Algorithm
+	CopyStyle             Theorem
+  Category Problems
+	DependsOn	           Theorem
+	LatexName             lyxalgorithm
+	LabelString           "Algorithm \thetheorem."
+	TheoremName                 lyxalgorithm
+	TheoremLaTeXName            algorithmname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Algorithm
+	TheoremCrossRefPluralName   Algorithms
+	TheoremZRefName             algorithm
+	LangPreamble
+	  \providecommand{\algorithmname}{_(Algorithm)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\algorithmname}{_(Algorithm)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{lyxalgorithm}{_(algorithm)}{_(algorithms)}\Crefname{lyxalgorithm}{_(Algorithm)}{_(Algorithms)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix alg
+End
+
+
+Style Algorithm*
+	CopyStyle             Theorem*
+  Category Problems
+	LatexName             lyxalgorithm*
+	LabelString           "Algorithm."
+	TheoremName                 lyxalgorithm*
+	TheoremLaTeXName            algorithmname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Algorithm
+	TheoremCrossRefPluralName   Algorithms
+	TheoremZRefName             algorithm
+	LangPreamble
+	  \providecommand{\algorithmname}{_(Algorithm)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\algorithmname}{_(Algorithm)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{lyxalgorithm*}{_(algorithm)}{_(algorithms)}\Crefname{lyxalgorithm*}{_(Algorithm)}{_(Algorithms)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Axiom
+	CopyStyle             Theorem
+  Category Definitions
+	DependsOn	            Theorem
+	LatexName             ax
+	LabelString           "Axiom \thetheorem."
+	TheoremName                 ax
+	TheoremLaTeXName            axiomname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Axiom
+	TheoremCrossRefPluralName   Axioms
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\axiomname}{_(Axiom)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\axiomname}{_(Axiom)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{ax}{_(axiom)}{_(axioms)}\Crefname{ax}{_(Axiom)}{_(Axioms)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix axm
+End
+
+
+Style Axiom*
+	CopyStyle             Theorem*
+  Category Definitions
+	LatexName             ax*
+	LabelString           "Axiom."
+	TheoremName                 ax*
+	TheoremLaTeXName            axiomname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Axiom
+	TheoremCrossRefPluralName   Axioms
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\axiomname}{_(Axiom)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\axiomname}{_(Axiom)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{ax*}{_(axiom)}{_(axioms)}\Crefname{ax*}{_(Axiom)}{_(Axioms)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Condition
+	CopyStyle             Definition
+  Category Definitions
+	LatexName             condition
+	LabelString           "Condition \thetheorem."
+	LabelFont
+	  Series              Bold
+	  Shape               Up
+	  Color               none
+	EndFont
+	TheoremName                 condition
+	TheoremLaTeXName            conditionname
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Condition
+	TheoremCrossRefPluralName   Conditions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\conditionname}{_(Condition)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conditionname}{_(Condition)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{condition}{_(condition)}{_(conditions)}\Crefname{condition}{_(Condition)}{_(Conditions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix cond
+End
+
+
+Style Condition*
+	CopyStyle             Definition*
+  Category Definitions
+	LatexName             condition*
+	LabelString           "Condition."
+	LabelFont
+	  Series              Bold
+	  Shape               Up
+	  Color               none
+	EndFont
+	TheoremName                 condition*
+	TheoremLaTeXName            conditionname
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Condition
+	TheoremCrossRefPluralName   Conditions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\conditionname}{_(Condition)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conditionname}{_(Condition)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{condition*}{_(condition)}{_(conditions)}\Crefname{condition*}{_(Condition)}{_(Conditions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Notes
+	CopyStyle             Remark
+  Category Remarks
+	LatexName             notes
+	LabelString           "Notes \thetheorem."
+	LabelFont
+	  Series              Bold
+	  Shape               Italic
+	  Color               Red
+	EndFont
+	TheoremName                 notes
+	TheoremLaTeXName            thmplusNotesHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Notes
+	TheoremCrossRefPluralName   Notes
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusNotesHeading}{\color{red}\bfseries\protect\notesname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\notesname}{_(Notes)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\notesname}{_(Notes)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{notes}{_(notes)}{_(notes)}\Crefname{notes}{_(Notes)}{_(Notes)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix notes
+End
+
+
+Style Notes*
+	CopyStyle             Remark*
+  Category Remarks
+	LatexName             notes*
+	LabelString           "Notes."
+	LabelFont
+	  Series              Bold
+	  Shape               Italic
+	  Color               Red
+	EndFont
+	TheoremName                 notes*
+	TheoremLaTeXName            thmplusNotesStarHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Notes
+	TheoremCrossRefPluralName   Notes
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusNotesStarHeading}{\color{red}\bfseries\protect\notesname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\notesname}{_(Notes)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\notesname}{_(Notes)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{notes*}{_(notes)}{_(notes)}\Crefname{notes*}{_(Notes)}{_(Notes)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Notation
+	CopyStyle             Definition
+  Category Definitions
+	LatexName             notation
+	LabelString           "Notation \thetheorem."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 notation
+	TheoremLaTeXName            notationname
+	TheoremStyle                boldnote
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Notation
+	TheoremCrossRefPluralName   Notations
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\notationname}{_(Notation)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\notationname}{_(Notation)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{notation}{_(notation)}{_(notations)}\Crefname{notation}{_(Notation)}{_(Notations)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix nota
+End
+
+
+Style Notation*
+	CopyStyle             Definition*
+  Category Definitions
+	LatexName             notation*
+	LabelString           "Notation."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 notation*
+	TheoremLaTeXName            notationname
+	TheoremStyle                boldnote
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Notation
+	TheoremCrossRefPluralName   Notations
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\notationname}{_(Notation)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\notationname}{_(Notation)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{notation*}{_(notation)}{_(notations)}\Crefname{notation*}{_(Notation)}{_(Notations)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Summary
+	CopyStyle             Definition
+  Category Summary
+	LatexName             summary
+	LabelString           "Summary \thetheorem."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 summary
+	TheoremLaTeXName            thmplusSummaryHeading
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Summary
+	TheoremCrossRefPluralName   Summaries
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusSummaryHeading}{\color{black}\bfseries\protect\summaryname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\summaryname}{_(Summary)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\summaryname}{_(Summary)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{summary}{_(summary)}{_(summaries)}\Crefname{summary}{_(Summary)}{_(Summaries)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix sum
+End
+
+
+Style Summary*
+	CopyStyle             Definition*
+  Category Summary
+	LatexName             summary*
+	LabelString           "Summary."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 summary*
+	TheoremLaTeXName            thmplusSummaryStarHeading
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Summary
+	TheoremCrossRefPluralName   Summaries
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusSummaryStarHeading}{\color{black}\bfseries\protect\summaryname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\summaryname}{_(Summary)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\summaryname}{_(Summary)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{summary*}{_(summary)}{_(summaries)}\Crefname{summary*}{_(Summary)}{_(Summaries)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Acknowledgement
+	CopyStyle             Remark
+  Category Summary
+	LatexName             acknowledgement
+	LabelString           "Acknowledgement \thetheorem."
+	LabelFont
+	  Shape               Italic
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 acknowledgement
+	TheoremLaTeXName            thmplusAcknowledgementHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Acknowledgement
+	TheoremCrossRefPluralName Acknowledgements
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusAcknowledgementHeading}{\bfseries\protect\acknowledgementname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\acknowledgementname}{_(Acknowledgement)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\acknowledgementname}{_(Acknowledgement)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{acknowledgement}{_(acknowledgement)}{_(acknowledgements)}\Crefname{acknowledgement}{_(Acknowledgement)}{_(Acknowledgements)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix ack
+End
+
+
+Style Acknowledgement*
+	CopyStyle             Remark*
+  Category Summary
+	LatexName             acknowledgement*
+	LabelString           "Acknowledgement."
+	LabelFont
+	  Shape               Italic
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 acknowledgement*
+	TheoremLaTeXName            thmplusAcknowledgementStarHeading
+	TheoremStyle                thmplusRemark
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Acknowledgement
+	TheoremCrossRefPluralName Acknowledgements
+	TheoremZRefName             none
+	Preamble
+	  \providecommand{\thmplusAcknowledgementStarHeading}{\bfseries\protect\acknowledgementname}
+	EndPreamble
+	LangPreamble
+	  \providecommand{\acknowledgementname}{_(Acknowledgement)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\acknowledgementname}{_(Acknowledgement)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{acknowledgement*}{_(acknowledgement)}{_(acknowledgements)}\Crefname{acknowledgement*}{_(Acknowledgement)}{_(Acknowledgements)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Conclusion
+	CopyStyle             Definition
+  Category Summary
+	LatexName             conclusion
+	LabelString           "Conclusion \thetheorem."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 conclusion
+	TheoremLaTeXName            conclusionname
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Conclusion
+	TheoremCrossRefPluralName   Conclusions[[theorem]]
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\conclusionname}{_(Conclusion)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conclusionname}{_(Conclusion)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{conclusion}{_(conclusion)}{_(conclusions[[theorem]])}\Crefname{conclusion}{_(Conclusion)}{_(Conclusions[[theorem]])}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix conc
+End
+
+
+Style Conclusion*
+	CopyStyle             Definition*
+  Category Summary
+	LatexName             conclusion*
+	LabelString           "Conclusion."
+	LabelFont
+	  Shape               Up
+	  Series              Bold
+	  Color               none
+	EndFont
+	TheoremName                 conclusion*
+	TheoremLaTeXName            conclusionname
+	TheoremStyle                thmplusDefinition
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Conclusion
+	TheoremCrossRefPluralName   Conclusions[[theorem]]
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\conclusionname}{_(Conclusion)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\conclusionname}{_(Conclusion)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{conclusion*}{_(conclusion)}{_(conclusions[[theorem]])}\Crefname{conclusion*}{_(Conclusion)}{_(Conclusions[[theorem]])}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Assumption
+	CopyStyle             Theorem
+  Category Definitions
+	DependsOn	            Theorem
+	LatexName             assumption
+	LabelString           "Assumption \thetheorem."
+	TheoremName                 assumption
+	TheoremLaTeXName            assumptionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Assumption
+	TheoremCrossRefPluralName   Assumptions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\assumptionname}{_(Assumption)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\assumptionname}{_(Assumption)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{assumption}{_(assumption)}{_(assumptions)}\Crefname{assumption}{_(Assumption)}{_(Assumptions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix assu
+End
+
+
+Style Assumption*
+	CopyStyle             Theorem*
+  Category Definitions
+	LatexName             assumption*
+	LabelString           "Assumption."
+	TheoremName                 assumption*
+	TheoremLaTeXName            assumptionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Assumption
+	TheoremCrossRefPluralName   Assumptions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\assumptionname}{_(Assumption)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\assumptionname}{_(Assumption)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{assumption*}{_(assumption)}{_(assumptions)}\Crefname{assumption*}{_(Assumption)}{_(Assumptions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Style Question
+	CopyStyle             Theorem
+  Category Problems
+	DependsOn             Theorem
+	LatexName             question
+	LabelString           "Question \thetheorem."
+	TheoremName                 question
+	TheoremLaTeXName            questionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              thm
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Question
+	TheoremCrossRefPluralName   Questions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\questionname}{_(Question)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\questionname}{_(Question)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{question}{_(question)}{_(questions)}\Crefname{question}{_(Question)}{_(Questions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix que
+End
+
+
+Style Question*
+	CopyStyle             Theorem*
+  Category Problems
+	LatexName             question*
+	LabelString           "Question."
+	TheoremName                 question*
+	TheoremLaTeXName            questionname
+	TheoremStyle                thmplusPlain
+	TheoremCounter              none
+	TheoremParentCounter        ""
+	TheoremCrossRefName         Question
+	TheoremCrossRefPluralName   Questions
+	TheoremZRefName             none
+	LangPreamble
+	  \providecommand{\questionname}{_(Question)}
+	EndLangPreamble
+	BabelPreamble
+	  \addto\captions$$lang{\renewcommand{\questionname}{_(Question)}}
+
+    \AddToHook{begindocument/end}{%
+      \ifdefined\crefname
+        \ifdefined\extras$$lang\addto\extras$$lang{\crefname{question*}{_(question)}{_(questions)}\Crefname{question*}{_(Question)}{_(Questions)}}\fi
+      \fi
+    }
+  EndBabelPreamble
+	RefPrefix OFF
+End
+
+
+Input theorem-extras-plus.inc
