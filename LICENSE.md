@@ -1,44 +1,3 @@
-# Theorems (AMS) Plus license
-
-SPDX-License-Identifier: GPL-2.0-or-later
-
-The LyX-derived layouts retain the copyright of their original contributors.
-Plus modifications and original accompanying tools, documentation and examples:
-Copyright (C) 2024-2026 Gilad Shrem.
-
-Except for separately credited third-party material, this distribution is licensed
-under GNU GPL version 2 or (at your option) any later version. Modification notice:
-the 2.0 release consolidates layouts, namespaces implementation helpers, corrects
-counter/reference/language metadata, and adds migration and translation tooling.
-See CREDITS.md for provenance and separate notices. No warranty is provided.
-
-Twemoji artwork embedded in the guide and example PDFs is licensed under CC BY 4.0, not the GPL.
-The external twemojis LaTeX wrapper is LPPL-1.3-or-later. Neither external package
-source nor the LyX, Python or TeX runtime is bundled here.
-
-## GNU General Public License, version 2
-
-The following notice and complete license text are reproduced verbatim from the
-LyX distribution's COPYING notice.
-
-```text
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
-
-    The GNU General Public License version 2 is included below for your reference.
-
-------------------------------------------------------------------------
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
 
@@ -379,4 +338,3 @@ proprietary programs.  If your program is a subroutine library, you may
 consider it more useful to permit linking proprietary applications with the
 library.  If this is what you want to do, use the GNU Library General
 Public License instead of this License.
-```
